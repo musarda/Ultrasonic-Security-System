@@ -1,5 +1,28 @@
 # Ultrasonic Security System
 
+<br>
+<div style="text-align: center;">
+  <a href="https://musarda.github.io">
+    <img src="https://img.shields.io/badge/Visit%20My-Website-E6E6E6" alt="Web Site Rozeti">
+  </a>
+  <a href="https://www.github.com/musarda"> <!--GitHub Link-->
+    <img src="https://img.shields.io/badge/-GitHub-000?style=quare&labelColor=000&logo=GitHub&logoColor=white&link=link" alt="Github Badge">
+  </a>
+  <a href="https://www.youtube.com/@CodeChain"> <!--YouTube Link-->
+    <img src="https://img.shields.io/badge/-YouTube-c4302b?style=quare&labelColor=c4302b&logo=YouTube&logoColor=white&link=link" alt="YouTube Badge">
+  </a>
+  <a href="https://discord.gg/kf29ZKZyw6"> <!--Discord Link-->
+    <img src="https://img.shields.io/badge/-Discord-738adb?style=quare&labelColor=blurple&logo=Discord&logoColor=white&link=link" alt="Discord Badge">
+  </a>
+  <a href="https://www.glitch.com/@musarda44"> <!--Glitch Link-->
+    <img src="https://img.shields.io/badge/-Glitch-2800ff?style=quare&labelColor=2800ff&logo=Glitch&logoColor=white&link=link" alt="Glitch Badge">
+  </a>
+  <a href="https://discord.gg/Kaye7tpHcQ"> <!--Discord2 Link-->
+    <img src="https://img.shields.io/badge/-Discord-738adb?style=quare&labelColor=blurple&logo=Discord&logoColor=white&link=link" alt="Discord Badge">
+  </a>
+</div>
+<br>
+
 It is a **simple** tutorial on how to create **little a security** device using an **Arduino**.
 
 > [!WARNING]  
