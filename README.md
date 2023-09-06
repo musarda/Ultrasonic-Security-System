@@ -99,6 +99,23 @@ It is hıghly recommended to use a **resistor** in connecting the **shorter leg*
 - `setup()` Function:
   * It initializes serial communication `(9600 baud)`.
   * Sets the pin modes: `trigPin` is set as an output, while `echoPin`, `LEDlampRed`, `LEDlampYellow`, `LEDlampGreen`, and `soundbuzzer` are set as input/output pins.
+  * 
+<details>
+<summary>Code</summary>
+
+```ino
+void setup() {
+
+    Serial.begin (9600);
+    pinMode(trigPin,  OUTPUT);
+    pinMode(echoPin, INPUT);
+    pinMode(LEDlampRed, OUTPUT);
+    pinMode(LEDlampYellow,  OUTPUT);
+    pinMode(LEDlampGreen, OUTPUT);
+    pinMode(soundbuzzer, OUTPUT);
+}
+```
+</details>
 
 - `loop()` Function:
   * It performs distance measurement with the **ultrasonic sensor**.
@@ -108,6 +125,60 @@ It is hıghly recommended to use a **resistor** in connecting the **shorter leg*
     - If the measured distance is less than **5 cm**, it turns on the **red LED** and activates the **buzzer** at a specific frequency.
     - If the measured distance is above **5 cm** or there is no valid distance measurement, it prints "Outside the permissible range of distances" to the serial monitor and turns off the buzzer.
     - It also prints the measured distance to the serial monitor.
+
+<details>
+<summary>Code</summary>
+
+```ino
+void  loop() {
+
+    long durationindigit, distanceincm;
+    
+    digitalWrite(trigPin, LOW);  
+    delayMicroseconds(2);
+    digitalWrite(trigPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(trigPin, LOW);
+
+    durationindigit = pulseIn(echoPin, HIGH);
+    distanceincm = (durationindigit/5) / 29.1;
+ 
+    if (distanceincm < 50) {
+        digitalWrite(LEDlampGreen, HIGH);
+    }
+    else {
+        digitalWrite(LEDlampGreen,  LOW);
+    }
+  
+    if (distance < 20) {
+        digitalWrite(LEDlampYellow,  HIGH);
+    }
+    else {
+        digitalWrite(LEDlampYellow,LOW);
+    }
+
+    if (distance  < 5) {
+        digitalWrite(LEDlampRed, HIGH);
+        sound = 1000;
+    }
+    else  {
+        digitalWrite(LEDlampRed,LOW);
+    }
+ 
+    if (distanceincm > 5 ||  distanceinsm <= 0){
+        Serial.println("Outside the permissible range of distances");
+        noTone(soundbuzzer);
+    }
+    else {
+        Serial.print(distance);
+        Serial.println("  cm");
+        tone(buzzer, sound);
+    }
+  
+    delay(300);
+  }
+```
+</details>
 
 - It creates a loop with **delay(300)**, so the sensor periodically measures distance and processes the results.
 
