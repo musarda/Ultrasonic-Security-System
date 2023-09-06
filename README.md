@@ -175,9 +175,7 @@ void  loop() {
     delay(300);
 }
 ```
-
 </details>
-<br>
 
 ### Folders
 
