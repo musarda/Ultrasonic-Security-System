@@ -193,5 +193,10 @@ void  loop() {
 
 **[You can view the files here](https://github.com/musarda/Ultrasonic-Security-System/tree/main/src)**
 
+## Clone
+
+```git
+git clone musarda/Ultrasonic-Security-System
+```
 ## License
 This project is **licensed** under the **[MIT License.](https://github.com/musarda/Ultrasonic-Security-System/blob/main/LICENSE)**
