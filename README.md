@@ -14,8 +14,8 @@ It is a **simple** tutorial on how to create **little a security** device using 
 - **[Assembly - Ultrasonic Sensor](#assembly---ultrasonic-sensor)**
 - **[Assembly - LEDs](#assembly---leds)**
 - **[Assembly - Buzzer](#assembly---buzzer)**
-- **[Code](code)**
-- **[Folders](folders)**
+- **[Code](#code)**
+- **[Folders](#folders)**
 - **[Clone](#clone)**
 - **[License](#license)**
 
