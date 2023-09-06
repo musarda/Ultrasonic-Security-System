@@ -2,8 +2,8 @@
 
 It is a simple tutorial on how to create little a security device using an Arduino.
 
-> [!WARNİNG]
-> This is for Educational and Informational Purposes Only
+> [!WARNING]  
+> This is for Educational and Informational Purposes Only.
 
 ## Components
 
@@ -51,6 +51,9 @@ GreenLED = pin 6
 ```
 
 The green wires connected to the LEDs should be connected in line to the positive side of the LED, while the negative side of the LED should be connected to the negative channel of the breadboard using a 220 ohm resistor. 
+
+> [!IMPORTANT]  
+> Make Sure The Connections Are Made Correctly Otherwise It May Not Work Correctly.
 
 ### Assembly - Breadboard
 
